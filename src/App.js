@@ -1,4 +1,4 @@
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Header } from './components/Header';
 import { Home } from './components/Home';
@@ -11,7 +11,7 @@ function App() {
   const [cart, setCart] = useState([]);
   return (
      <>
-        <HashRouter>
+        <BrowserRouter>
         <Header cart={cart} />
         <div className='container'>
           <Routes>
@@ -21,7 +21,7 @@ function App() {
             <Route path='/Register' element={<Register cart= {cart} setCart= {setCart} />} />
           </Routes>
         </div>
-        </HashRouter>
+        </BrowserRouter>
      </>
   );
 }
