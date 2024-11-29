@@ -1,0 +1,18 @@
+.search {
+    margin-top: 60px;
+    margin-left: 30%;
+}
+
+.btn {
+    border-radius: 30px;
+    margin-left: 10px;
+    font-size: 25px;
+    background-color: teal;
+    color: white;
+ }
+i {
+    margin-right: 10px;
+}
+input {
+    border-radius: 30px;
+}
